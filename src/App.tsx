@@ -32,6 +32,7 @@ export default App;
 import React from "react";
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Link
@@ -46,19 +47,21 @@ import {
 // making sure things like the back button and bookmarks
 // work properly.
 
+const BASENAME = "/minecrafting-calculator"
+
 export default function BasicExample() {
   return (
     <Router>
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to={`${BASENAME}/`}>Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to={`${BASENAME}/about`}>About</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to={`${BASENAME}/dashboard`}>Dashboard</Link>
           </li>
         </ul>
 
@@ -72,13 +75,13 @@ export default function BasicExample() {
           of them to render at a time
         */}
         <Switch>
-          <Route exact path="/">
+          <Route exact path={`${BASENAME}/`}>
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path={`${BASENAME}/about`}>
             <About />
           </Route>
-          <Route path="/dashboard">
+          <Route path={`${BASENAME}/dashboard`}>
             <Dashboard />
           </Route>
         </Switch>
