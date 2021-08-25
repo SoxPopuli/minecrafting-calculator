@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/minecrafting-calculator/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/minecrafting-calculator/static/js/main.08dfa866.chunk.js",
-    "main.js.map": "/minecrafting-calculator/static/js/main.08dfa866.chunk.js.map",
+    "main.js": "/minecrafting-calculator/static/js/main.e693ca59.chunk.js",
+    "main.js.map": "/minecrafting-calculator/static/js/main.e693ca59.chunk.js.map",
     "runtime-main.js": "/minecrafting-calculator/static/js/runtime-main.e9f03149.js",
     "runtime-main.js.map": "/minecrafting-calculator/static/js/runtime-main.e9f03149.js.map",
     "static/js/2.e476697b.chunk.js": "/minecrafting-calculator/static/js/2.e476697b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e9f03149.js",
     "static/js/2.e476697b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.08dfa866.chunk.js"
+    "static/js/main.e693ca59.chunk.js"
   ]
 }
