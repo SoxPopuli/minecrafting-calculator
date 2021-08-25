@@ -55,13 +55,14 @@ export default function BasicExample() {
       <div>
         <ul>
           <li>
-            <Link to={`${BASENAME}/`}>Home</Link>
+            {/* <Link to={`${BASENAME}`}>Home</Link> */}
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to={`${BASENAME}/about`}>About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to={`${BASENAME}/dashboard`}>Dashboard</Link>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
         </ul>
 
@@ -75,13 +76,13 @@ export default function BasicExample() {
           of them to render at a time
         */}
         <Switch>
-          <Route exact path={`${BASENAME}/`}>
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path={`${BASENAME}/about`}>
+          <Route path="/about">
             <About />
           </Route>
-          <Route path={`${BASENAME}/dashboard`}>
+          <Route path="/dashboard">
             <Dashboard />
           </Route>
         </Switch>
@@ -104,7 +105,7 @@ function Home() {
 function About() {
   return (
     <div>
-      <h2>About</h2>
+      <h2>Aboot</h2>
     </div>
   );
 }
